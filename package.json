@@ -1,0 +1,15 @@
+{
+  "name": "soog-instruments",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SOOG instrument catalogue: one Obsidian note (YAML frontmatter + body) per instrument.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test scripts/*.test.mjs",
+    "normalize": "node scripts/normalize.mjs .",
+    "normalize:apply": "node scripts/normalize.mjs . --apply"
+  },
+  "devDependencies": {
+    "yaml": "^2.8.3"
+  }
+}
