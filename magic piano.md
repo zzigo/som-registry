@@ -3,7 +3,7 @@ id: magic_piano
 title: magic piano
 type: instrument
 status: stub
-publish: true
+publish: false
 ---
 #dss/ref
 

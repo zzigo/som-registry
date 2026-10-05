@@ -11,7 +11,7 @@ tags:
 img: https://i.imgur.com/bvr38hI.png
 year: 2014
 url: https://www.instructables.com/Javalele/
-publish: true
+publish: false
 ---
 ![](https://i.imgur.com/bvr38hI.png)
 

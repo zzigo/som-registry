@@ -30,7 +30,7 @@ som_hs: N/A (DIY electronic)
 som_fiction: 2
 som_feedback: gesture ↔ circuit/code ↔ audio-visual
 som_confidence: estimate
-publish: true
+publish: false
 ---
 
 # Osc Twins (+ DIY sound-instrument expansion toolkit)

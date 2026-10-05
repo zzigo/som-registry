@@ -30,7 +30,7 @@ som_hs: N/A (installation)
 som_fiction: 5
 som_feedback: ecological process ↔ sensing ↔ spatial sound (ecofiction)
 som_confidence: estimate (in development)
-publish: true
+publish: false
 ---
 
 

@@ -16,7 +16,7 @@ timeline:
 person:
   - Hugh Davies
 year: 1964
-publish: true
+publish: false
 ---
 ![](https://i.imgur.com/kM7kQgR.png)
 - It incorporates both **acoustic sound sources** and **electronic amplification**. These sound sources could include springs, wires, or found objects.

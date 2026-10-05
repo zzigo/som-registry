@@ -10,7 +10,7 @@ tags:
   - dss/case/instruments
 year: 2014
 img: https://i.imgur.com/ClPLMUz.png
-publish: true
+publish: false
 ---
 
 ![](https://i.imgur.com/ClPLMUz.png)

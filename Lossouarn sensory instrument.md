@@ -27,7 +27,7 @@ som_hs: N/A
 som_fiction: 3
 som_feedback: imperceptible signal → amplification → sensory perception
 som_confidence: estimate
-publish: true
+publish: false
 ---
 
 # Lossouarn — sensory-expansion instrument

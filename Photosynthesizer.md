@@ -27,7 +27,7 @@ som_hs: N/A (post-organological / bio)
 som_fiction: 4
 som_feedback: biological-process → signal → sound (no human gesture loop)
 som_confidence: estimate
-publish: true
+publish: false
 ---
 
 # Photosynthesizer

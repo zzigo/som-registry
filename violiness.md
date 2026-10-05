@@ -13,7 +13,7 @@ tags:
   - dss/acoustic
 year: 2017
 url: https://www.hansjohannsson.com/rapidweaver%20export/exp.html
-publish: true
+publish: false
 ---
 ![](https://i.imgur.com/726rdJg.png)
 

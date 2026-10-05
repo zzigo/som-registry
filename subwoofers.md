@@ -10,7 +10,7 @@ img:
 url:
 person:
   - Stefanie Egedy
-publish: true
+publish: false
 ---
 
 ![](https://i.imgur.com/4A8jG1M.png)

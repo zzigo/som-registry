@@ -34,7 +34,7 @@ som_hs: N/A (not a musical instrument)
 som_fiction: 5
 som_feedback: microbial metabolism → biofuel → propulsion / energy
 som_confidence: estimate (speculative design, 2020)
-publish: true
+publish: false
 ---
 
 # Symbiotic Engine — *Microbial Cosmologies*

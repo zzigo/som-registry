@@ -14,7 +14,7 @@ url: https://www.christianmeaassvendsen.com/interviews/2020/5/25/florian-walter
 timeline:
   - dssCaseInstruments
 aat-render-enabled: true
-publish: true
+publish: false
 ---
 
 The instrument is an invention which we did two and a half years ago. I was working with some dancers for a dance theatre production. A part of the stage design was consisting of bells from various brass instruments, and an artist made a landscape out of these. I was playing the saxophone, but at that time I started working on the reed-trumpet. The reed-trumpet is a quite old concept, stemming back to the 60s-70s, and the main idea is that you play trumpet with a saxophone mouthpiece and make it sound like a trumpet, basically.  

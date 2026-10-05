@@ -27,7 +27,7 @@ som_hs: mixed (per instrument)
 som_fiction: 2
 som_feedback: gesture ↔ built object ↔ sound
 som_confidence: estimate (series, ongoing)
-publish: true
+publish: false
 ---
 
 # Toksöz Fairbairn — invented-instruments series

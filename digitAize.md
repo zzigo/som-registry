@@ -8,7 +8,7 @@ tags:
 year: 2015
 person: Rafal Zalech, Alessandro Baticci
 img: https://i.imgur.com/CVWndVn.png
-publish: true
+publish: false
 ---
 
 Meet DigitAize – the innovative digital mapping system for acoustic string instruments. If you play the violin, viola, cello or double bass, then take your time to discover all the great possibilities that open up through DigitAize !

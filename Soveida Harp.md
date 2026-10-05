@@ -13,7 +13,7 @@ tags:
   - dss/case/instruments
 year: 2019
 url: https://www.amirkonjani.com/
-publish: true
+publish: false
 ---
  The Soveida Harp is a conceptual musical instrument that integrates mathematical principles, such as symmetry and fractals, into its design and sound production. It is characterized by its ability to generate microtonal and polyrhythmic structures, making it a tool for exploring advanced musical theories and interdisciplinary applications. The harp's design is inspired by geometric patterns and dynamic systems, allowing for both traditional and experimental performances.
 

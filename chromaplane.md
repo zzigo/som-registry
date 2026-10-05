@@ -15,7 +15,7 @@ url: https://koma-elektronik.com/?product=chromaplane
 timeline:
   - dssCaseInstruments
 aat-render-enabled: true
-publish: true
+publish: false
 ---
 ![|300](https://i.imgur.com/fj9NIjE.png)
 

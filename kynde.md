@@ -13,7 +13,7 @@ tags:
 
 year: 2025
 url:  https://www.iac.lu.se/calendar/lars-kynde-open-seminar-more-sound-residency
-publish: true
+publish: false
 ---
 
 https://www.youtube.com/watch?v=hcULXhaQgfM

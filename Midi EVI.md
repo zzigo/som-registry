@@ -12,7 +12,7 @@ tags:
   - dss/case/instruments
 year: 2004
 url: https://www.patchmanmusic.com/NyleSteinerHomepage.html
-publish: true
+publish: false
 ---
 
 

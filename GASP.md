@@ -27,7 +27,7 @@ som_hs: 422? (aerophone-adjacent) [estimate]
 som_fiction: 4
 som_feedback: inhalation ↔ body ↔ sound (reversed breath instrument)
 som_confidence: speculative (in development, premiere fall 2026)
-publish: true
+publish: false
 ---
 
 # GASP

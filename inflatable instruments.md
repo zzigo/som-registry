@@ -3,7 +3,7 @@ id: inflatable_instruments
 title: inflatable instruments
 type: instrument
 status: stub
-publish: true
+publish: false
 ---
 ## Sky Macklay 
 ### harmonitrees 2024

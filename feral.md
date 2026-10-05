@@ -14,7 +14,7 @@ tags:
   - dss/feedback
 year: 2017
 url:
-publish: true
+publish: false
 ---
 he Feral Cello is an augmented feedback cello conceived by Tom Davis and most recently developed in conjunction with [Laura Reid](https://laurareid.co.uk/). This system has been utilised in a number of performance contexts, most notably NIME 2017, SMC 2017 & NoiseCore 2017 where it was used to perform the piece Gemmeleg, composed by Reid (2017)
 Inspired by a post-phenomenological understanding of musical intentionality this performance features an actuated cello that is controlled solely through machine listening. A pickup under the bridge sends the cello sound to a laptop running Max for processing and a machine learning algorithm analyses the cello’s sounds to make decisions on the type of signal processing to apply. This processed audio is then played back through the body of the cello through two actuators placed upon its body. The cello and the processed sound through the instrument should be conceived as one augmented instrument.

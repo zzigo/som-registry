@@ -18,7 +18,7 @@ timeline:
 aat-render-enabled: true
 connect:
   - Ernst Pôppel
-publish: true
+publish: false
 ---
 ![](https://i.imgur.com/wFCJdpN.png)
 
