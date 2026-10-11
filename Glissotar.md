@@ -2,6 +2,9 @@
 id: glissotar
 title: Glissotar
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev: 
 family: wind, material
 person: Daniel Váczi

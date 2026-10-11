@@ -2,6 +2,9 @@
 id: sophtar
 title: sophtar
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev: 
 family: 
 person:

@@ -2,6 +2,9 @@
 id: feral
 title: feral
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev: 
 family: 
 sachs-hornbostel: 

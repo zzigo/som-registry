@@ -2,6 +2,9 @@
 id: digitaize
 title: digitAize
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 url: https://www.digitaize.eu/shop/
 tags:
   - dss/case/instruments/augmented

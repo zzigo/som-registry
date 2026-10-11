@@ -2,6 +2,9 @@
 id: spring_spyre
 title: spring spyre
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev: 
 family: machine learning
 sachs-hornbostel: 

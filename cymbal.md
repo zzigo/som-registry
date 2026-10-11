@@ -16,6 +16,9 @@ tags:
 # ── TAXONOMY ──────────────────────────────────────────────────────────
 category: 2obj
 type: instrument
+kind: individual
+corpus: case
+origin: traditional
 layer: acoustic
 
 abrev: CYM

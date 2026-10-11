@@ -13,8 +13,11 @@ tags:
   - wind-controller-genealogy
 
 # ── TAXONOMY ──────────────────────────────────────────────────────────
-category: 1obj            # 1obj / 2obj / 3syst / 4fict — handheld wind controller (system with synth)
+category: 2obj
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 layer: functional         # pure interface / NIME — produces no acoustics; validated by function & interaction, not wave physics
 abrev: EWI
 family: electronic wind instruments / breath-controlled MIDI wind controllers / gestural aerophones

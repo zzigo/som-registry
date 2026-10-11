@@ -2,6 +2,9 @@
 id: gasp
 title: GASP
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev:
 family: breath, performative
 sachs-hornbostel:

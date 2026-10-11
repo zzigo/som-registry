@@ -2,6 +2,9 @@
 id: de_glace_et_d_eau
 title: De glace et d'eau
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev:
 family: installation, eco, sound art
 sachs-hornbostel:

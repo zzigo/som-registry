@@ -8,8 +8,11 @@ tags:
 - dss/case/instruments/perc
 
 # ── TAXONOMY ──────────────────────────────────────────────────────────
-category: 1obj
+category: 2obj
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 layer: functional
 abrev: ALM
 family: tuned metal idiophone / graduated triangle system

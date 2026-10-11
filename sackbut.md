@@ -2,6 +2,9 @@
 id: sackbut
 title: sackbut
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev: 
 family: 
 sachs-hornbostel: 

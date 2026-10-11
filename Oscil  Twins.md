@@ -2,6 +2,9 @@
 id: oscil_twins
 title: Oscil  Twins
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev:
 family: electronic, DIY, audiovisual
 sachs-hornbostel:

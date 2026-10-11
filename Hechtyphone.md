@@ -2,6 +2,9 @@
 id: hechtyphone
 title: Hechtyphone
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev:
 family:
 person: Florian Walter

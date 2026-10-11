@@ -17,6 +17,9 @@ tags:
 # ── TAXONOMY ──────────────────────────────────────────────────────────
 category: 2obj
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 layer: acoustic
 
 abrev: FOL

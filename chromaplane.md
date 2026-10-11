@@ -2,6 +2,9 @@
 id: chromaplane
 title: chromaplane
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev: 
 family: electrophones
 person:

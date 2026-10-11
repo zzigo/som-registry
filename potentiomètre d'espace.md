@@ -10,7 +10,7 @@ tags:
   - dss/case/instruments
 year: 1951
 url:
-def: *potentiomètre d'espace* is an electroacoustic instrument designed by Pierre Schaeffer to dynamically spatialize sound in performance. It enables real-time manipulation of sound trajectories across a multichannel speaker array, creating immersive sonic relief through contrasts between static and mobile sound sources. This device was pivotal in *musique concrète*, emphasizing the perceptual interplay of spatiality and temporality in composition.
+def: "*potentiomètre d'espace* is an electroacoustic instrument designed by Pierre Schaeffer to dynamically spatialize sound in performance. It enables real-time manipulation of sound trajectories across a multichannel speaker array, creating immersive sonic relief through contrasts between static and mobile sound sources. This device was pivotal in *musique concrète*, emphasizing the perceptual interplay of spatiality and temporality in composition."
 connect:
   - "[[Groupe de Recherche de Musique Concrète (GRMC)]]"
   - "[[Symphonie pour un homme seul]]"

@@ -1,7 +1,7 @@
 ---
 abrev:
 family:
-creator:
+person:
 performers:
 tags:
   - dss/case/instruments

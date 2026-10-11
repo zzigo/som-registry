@@ -13,8 +13,12 @@ tags:
   - dss/feedback
 
 # ── TAXONOMY ──────────────────────────────────────────────────────────
-category: 3syst           # 1obj / 2obj / 3syst / 4fict — cybernetic learning system
+category: 2obj
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
+subtype: system
 layer: ontological        # validated relationally (agency, learning behaviour), though physically acoustic
 abrev: SPRL
 family: feedback instruments / self-tuning string arrays / reinforcement-learning instruments

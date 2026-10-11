@@ -2,6 +2,9 @@
 id: lossouarn_sensory_instrument
 title: Lossouarn sensory instrument
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev:
 family: tactile, sound, sensory
 sachs-hornbostel:

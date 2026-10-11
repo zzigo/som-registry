@@ -2,6 +2,9 @@
 id: kynde
 title: kynde
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev: 
 family: 
 sachs-hornbostel:

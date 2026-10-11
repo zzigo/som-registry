@@ -2,6 +2,8 @@
 id: inflatable_instruments
 title: inflatable instruments
 type: instrument
+kind: individual
+corpus: case
 status: stub
 publish: false
 ---

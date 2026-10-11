@@ -8,6 +8,9 @@ tags:
 
 category:
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 layer:
 abrev:
 family:

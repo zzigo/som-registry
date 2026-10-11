@@ -2,6 +2,9 @@
 id: photosynthesizer
 title: Photosynthesizer
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev:
 family: bio-instrument, electronic
 sachs-hornbostel:

@@ -10,8 +10,10 @@ tags:
   - dss/case/instruments/popular
 
 # ── TAXONOMY ──────────────────────────────────────────────────────────
-category: 1obj
+category: 2obj
 type: instrument
+kind: individual
+corpus: case
 layer: functional
 abrev: LTG
 family: "cantilever-collision plaque idiophone / direct concussion, fixed-handle"

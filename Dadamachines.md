@@ -2,6 +2,9 @@
 id: dadamachines
 title: Dadamachines
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev: 
 family: 
 tags:

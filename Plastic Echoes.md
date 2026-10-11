@@ -2,6 +2,9 @@
 id: plastic_echoes
 title: Plastic Echoes
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev:
 family: electronic, material, eco
 sachs-hornbostel:

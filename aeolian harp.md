@@ -11,8 +11,11 @@ tags:
   - dss/case/instruments
 
 # ── TAXONOMY ──────────────────────────────────────────────────────────
-category: 1obj            # 1obj / 2obj / 3syst / 4fict — simple box-zither body
+category: 2obj
 type: instrument
+kind: individual
+corpus: case
+origin: traditional
 layer: acoustic           # fully physical and simulable (aeroacoustics + string)
 abrev: AEOL
 family: wind-excited chordophones / environmental (autoexcited) instruments

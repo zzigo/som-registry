@@ -2,6 +2,9 @@
 id: javalele
 title: javalele
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev: 
 family: string, material
 person: John Granzow

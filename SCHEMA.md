@@ -44,7 +44,7 @@ date at read time). Wikilinks `[[Target|Alias]]` are reduced to `Target`.
 
 | key | type | public | meaning / example |
 |---|---|---|---|
-| `category` | string | no | SOOG category: `1obj` / `2obj` / `3syst` / `4fict` (older: `1mat`, `5env`). |
+| `category` | string | no | SOOG category code: `1mat`, `2obj` (all instruments), `3agn`, `4int`, `5env`, `0pri`, `0dict`. Legacy `1obj`, `3syst`, `4fict` were mapped to `2obj`. |
 | `type` | string | gate | `instrument` (see Visibility). |
 | `layer` | string | yes | `acoustic` \| `functional` \| `ontological` \| `fictional` \| `all`. `fictional` marks the instrument as fictional in the API. |
 | `abrev` | string | no | short code. `DAX` |

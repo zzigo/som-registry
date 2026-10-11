@@ -12,8 +12,12 @@ tags:
   - dss/case/instruments/iii
 
 # ── TAXONOMY ──────────────────────────────────────────────────────────
-category: 3syst           # 1obj / 2obj / 3syst / 4fict — 133-receiver swarm installation + lecture-performance
+category: 2obj
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
+subtype: system
 layer: ontological        # validated as critical/material organology, not by acoustic simulation
 abrev: IMLS
 family: instrument-as-circuit / critical-material electronics / radio sound installation

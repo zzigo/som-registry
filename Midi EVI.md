@@ -2,6 +2,9 @@
 id: midi_evi
 title: Midi EVI
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev: 
 family: 
 sachs-hornbostel:

@@ -9,8 +9,11 @@ tags:
   - dss/case/instruments/cantilever-collision
 
 # ── TAXONOMY ──────────────────────────────────────────────────────────
-category: 1obj
+category: 2obj
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 layer: functional
 abrev: SNB
 family: "cantilever-collision rod idiophone / compound struck + secondary concussion"

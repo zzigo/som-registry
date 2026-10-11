@@ -12,8 +12,11 @@ tags:
   - orq/perc
 
 # ── TAXONOMY ──────────────────────────────────────────────────────────
-category: 1obj            # 1obj / 2obj / 3syst / 4fict — single bowed tongue + movable stop
+category: 2obj
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 layer: acoustic           # physical, simulable; electroacoustic amplification stage
 abrev: DAX
 family: friction idiophone / bowed wooden lamella (electric, contact-mic amplified)

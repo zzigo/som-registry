@@ -2,6 +2,9 @@
 id: symbiotic_engine
 title: Symbiotic Engine
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev:
 family: speculative design, bio, eco, post-human
 sachs-hornbostel:

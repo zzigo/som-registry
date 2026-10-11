@@ -2,6 +2,9 @@
 id: soveida_harp
 title: Soveida Harp
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev: shp
 family: string
 sachs-hornbostel: 

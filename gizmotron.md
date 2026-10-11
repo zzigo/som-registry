@@ -2,6 +2,9 @@
 id: gizmotron
 title: gizmotron
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev:
 family:
 sachs-hornbostel:

@@ -6,6 +6,8 @@ tags:
   - speculative-organology
 category:
 type: instrument
+kind: individual
+corpus: case
 layer:
 abrev:
 family:

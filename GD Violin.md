@@ -12,6 +12,9 @@ tags:
   - generative-design
 category: 2obj
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 layer: acoustic
 abrev: GDV
 family: chordophone / bowed string (electric)

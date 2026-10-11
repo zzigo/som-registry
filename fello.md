@@ -2,6 +2,9 @@
 id: fello
 title: fello
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev: 
 family: 
 person:

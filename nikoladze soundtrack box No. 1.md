@@ -2,6 +2,9 @@
 id: nikoladze_soundtrack_box_no_1
 title: nikoladze soundtrack box No. 1
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev:
 family:
 person:

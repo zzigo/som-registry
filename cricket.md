@@ -5,7 +5,7 @@ instrument:
 abrev: 
 family: 
 performers:
-tags: orq/perc
+tags: [orq/perc]
 yearurl:
 era: 
 type: box

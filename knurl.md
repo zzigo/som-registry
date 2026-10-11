@@ -2,6 +2,9 @@
 id: knurl
 title: knurl
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev: 
 family: 
 person: Rafaele Andrade

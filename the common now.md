@@ -2,6 +2,9 @@
 id: the_common_now
 title: the common now
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev: 
 family: 
 person:

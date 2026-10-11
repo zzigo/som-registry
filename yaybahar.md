@@ -1,7 +1,4 @@
 ---
-## CTX — MOAIE Instrument Node
-
-# ── IDENTITY ──────────────────────────────────────────────────────────
 id: yaybahar
 title: Yaybahar
 tags:
@@ -9,36 +6,32 @@ tags:
   - instrument
   - speculative-organology
   - spring-family
-
-# ── TAXONOMY ──────────────────────────────────────────────────────────
-category: 2obj            # 1obj / 2obj / 3syst / 4fict — topology is constitutive
+category: 2obj
 type: instrument
-layer: acoustic           # measurable / simulable (FEM, DSP); fully physical
+kind: individual
+corpus: case
+origin: contemporary
+layer: acoustic
 abrev: YBH
 family: spring-coupled resonator instruments / dispersive transmission systems
-sachs-hornbostel: "partially null — chordophone excitation (321/322) radiated by membranophones (2) via an unclassified helical-spring transmission line; no SH class covers the coupling stage"
-
-# ── PEOPLE / META ─────────────────────────────────────────────────────
+sachs-hornbostel: partially null — chordophone excitation (321/322) radiated by membranophones (2) via an unclassified helical-spring transmission line; no SH class covers the coupling stage
 person: "[[Görkem Şen]]"
 authors: "[[Görkem Şen]]"
 year: 2009
 url: https://www.gorkemsen.com/gorkem-sen-s-yaybahar
 img: https://i.imgur.com/Caj1rC5.png
-bib: "@misc{sen2009yaybahar, author={{\\c{S}}en, G{\\\"o}rkem}, title={Yaybahar — Patented Member of the Spring Family of Instruments}, year={2009}, note={Inventor statement, gorkemsen.com}}"
+bib: '@misc{sen2009yaybahar, author={{\c{S}}en, G{\"o}rkem}, title={Yaybahar — Patented Member of the Spring Family of Instruments}, year={2009}, note={Inventor statement, gorkemsen.com}}'
 video: https://www.youtube.com/watch?v=_aY6TxC1ojA
-# ── GRAPH CONNECTIONS ─────────────────────────────────────────────────
 hyper:
   - "[[speculative organology]]"
 hypo: []
 connect:
   - "[[spring reverb]]"
   - "[[dispersive waveguide]]"
-  - "[[transduction]]"
+  - "[[03-thesis/01-ctx/30-ctx-materials/transduction]]"
   - "[[coupling]]"
   - "[[frame drum]]"
   - "[[baglama]]"
-
-# ── TOPOLOGY (2obj extension) ─────────────────────────────────────────
 topology:
   shape: long bilateral cantilever — a central horizontal pole carries long strings whose ends terminate, through coiled springs, on two membrane-headed frame drums; near-symmetric string/spring/drum chain on each side
   dimensions: pole length ~2–4 m; string scale length ~1.5–3 m; drum diameter ~0.4–0.6 m
@@ -51,16 +44,19 @@ topology:
   support_required: true
   weight_class: installation
   movement_during_play: performer moves laterally along the pole to reach distinct string/spring/drum stations; large-amplitude bowing and plucking gestures
-
-# ── FABRICATION ───────────────────────────────────────────────────────
 fabrication:
   method: acoustic
-  material_refs: ["steel coil springs", "metal/gut strings", "stretched leather membranes", "tempered metal", "wood"]
+  material_refs:
+    - steel coil springs
+    - metal/gut strings
+    - stretched leather membranes
+    - tempered metal
+    - wood
   complexity: high
   files: []
-  variants: ["early prototypes (2009–)", "refined concert instrument"]
-
-# ── MOAIE VECTOR ──────────────────────────────────────────────────────
+  variants:
+    - early prototypes (2009–)
+    - refined concert instrument
 moaie:
   M: "[[steel spring]] · [[membrane]] · [[string]] — conventional materials in unconventional coupling role"
   O: "[[bilateral cantilever]] — string→spring→membrane chain; novel morphology, weak SH fit"
@@ -68,26 +64,23 @@ moaie:
   I: "[[bowing]]/[[plucking]] familiar gesture, but dispersive spring coupling scrambles gesture→sound causality"
   E: "[[membrane radiation]] — spatial, room-immersive, but not in a feedback loop"
   recursive: false
-  vector: [0.35, 0.75, 0.20, 0.60, 0.30]
-  # M=0.35  conventional materials, novel function
-  # O=0.75  genuinely new body topology, SH-resistant
-  # A=0.20  single performer, no machine agency
-  # I=0.60  transferable gesture + non-transparent coupling
-  # E=0.30  spatial radiation, not recursive
-
-# ── INTERFACE PROFILE (4int dimensions) ───────────────────────────────
+  vector:
+    - 0.35
+    - 0.75
+    - 0.2
+    - 0.6
+    - 0.3
 interface_profile:
-  affordance:          0.55   # reads as a string instrument — bow/pluck is guessable
-  liveness:            0.35   # spring dispersion delays/transforms — causality partly hidden
-  playability:         0.45   # clean intended pitch is hard; the instrument "answers back"
-  learnability:        0.40   # string skill transfers; spring response must be relearned
-  situatedness:        0.50   # rooted in bowed/plucked and long-neck Anatolian lineage
-  mediality:           0.70   # whole-body, both hands, large gestures, lateral movement
-  mapping:             0.40   # dispersion breaks one-to-one gesture→sound mapping
-  sensorimotor_scheme: 0.60   # bowing/plucking schemes transfer substantially
-  ergonomics:          0.45   # large, stand-mounted, long reach across the pole
-  expressivity:        0.80   # dispersive coupling yields wide, evolving timbral range
-
+  affordance: 0.55
+  liveness: 0.35
+  playability: 0.45
+  learnability: 0.4
+  situatedness: 0.5
+  mediality: 0.7
+  mapping: 0.4
+  sensorimotor_scheme: 0.6
+  ergonomics: 0.45
+  expressivity: 0.8
 status: draft
 publish: true
 modified: 2026-06-08

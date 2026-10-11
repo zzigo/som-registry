@@ -2,6 +2,9 @@
 id: black_box_music
 title: black box music
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev: bbm
 family:
 person: Simon Steen Andersen

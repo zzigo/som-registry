@@ -2,6 +2,9 @@
 id: subwoofers
 title: subwoofers
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 tags:
   - dss/o/smi
 interface:

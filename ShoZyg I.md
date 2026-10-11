@@ -2,6 +2,9 @@
 id: shozyg_i
 title: ShoZyg I
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 instrument:
 abrev:
 family:

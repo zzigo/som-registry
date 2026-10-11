@@ -2,6 +2,9 @@
 id: toksoz_fairbairn_invented_instruments
 title: Toksoz Fairbairn invented instruments
 type: instrument
+kind: individual
+corpus: case
+origin: contemporary
 abrev:
 family: invented, acoustic, experimental
 sachs-hornbostel:

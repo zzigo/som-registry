@@ -10,8 +10,11 @@ tags:
 - dss/case/instruments/historical
 
 # ── TAXONOMY ──────────────────────────────────────────────────────────
-category: 1obj
+category: 2obj
 type: instrument
+kind: individual
+corpus: case
+origin: traditional
 layer: functional
 abrev: LRN
 family: bowed chordophone / lira family
