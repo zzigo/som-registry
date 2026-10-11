@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "**.md"
+      - "0ins/**.md"
       - ".github/workflows/notify-platform-on-content-change.yml"
   workflow_dispatch:
 

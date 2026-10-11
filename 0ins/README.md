@@ -1,9 +1,8 @@
-# soog-instruments
+# 0ins, the instrument registry
 
 The SOOG instrument catalogue: one Obsidian note per instrument (YAML
 frontmatter + Markdown body). This folder lives inside the Obsidian vault at
-`03-thesis/cases/case instruments/` and is its own git repo
-(`zzigo/soog-instruments`); the vault repo ignores it.
+`03-thesis/03-soog/0ins/` and is part of the `03-soog` repository (history of the former `zzigo/soog-instruments` preserved); the vault repo ignores `03-soog`.
 
 - Edit notes in Obsidian as usual, then commit and push from this folder.
 - The musiki engine pulls this repo as the `soog-instruments` content source and

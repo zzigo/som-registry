@@ -71,7 +71,7 @@ interface_profile:
   expressivity: 0
 status: draft
 publish: true
-modified: <% tp.date.now("YYYY-MM-DD") %>
+modified: 2026-10-11
 ---
 
 

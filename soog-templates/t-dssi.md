@@ -1,7 +1,7 @@
 ---
 ## CTX Stub — Case Instrument (ctx layer)
 
-# Use this template for NEW instrument stubs in 01-ctx/cases/case instruments/
+# Use this template for NEW instrument stubs in 03-soog/0ins/
 # Once an instrument receives full MOAIE treatment, promote to t-moaie.md format
 
 # ── IDENTITY ──────────────────────────────────────────────────────────
