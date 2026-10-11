@@ -1,0 +1,28 @@
+name: Notify Platform Content Sync (Content Bus)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**.md"
+      - ".github/workflows/notify-platform-on-content-change.yml"
+  workflow_dispatch:
+
+jobs:
+  notify-platform:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Content Bus Webhook
+        env:
+          CONTENT_BUS_SECRET: ${{ secrets.CONTENT_BUS_SECRET }}
+        run: |
+          curl -sS --fail-with-body -X POST https://www.musiki.org.ar/api/webhook/content-update \
+            -H "Authorization: Bearer ${CONTENT_BUS_SECRET}" \
+            -H "Content-Type: application/json" \
+            -d @- <<JSON
+          {
+            "source_repo": "${{ github.repository }}",
+            "source_sha": "${{ github.sha }}",
+            "source_ref": "${{ github.ref_name }}"
+          }
+          JSON

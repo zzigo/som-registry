@@ -1,0 +1,60 @@
+filters:
+  and:
+    - file.folder == "03-thesis/01-ctx/cases/case instruments"
+    - '!file.name.startsWith("dss")'
+    - '!file.name.startsWith("som")'
+views:
+  - type: table
+    name: SOM matrix
+    order:
+      - file.name
+      - year
+      - person
+      - family
+      - som_material
+      - som_interaction
+      - som_sensory
+      - som_agency
+      - som_mediation
+      - som_object
+      - som_hs
+      - som_fiction
+      - som_feedback
+      - som_confidence
+    sort:
+      - property: som_fiction
+        direction: DESC
+      - property: year
+        direction: DESC
+    columnSize:
+      file.name: 200
+      som_material: 220
+      som_feedback: 240
+  - type: table
+    name: SOM iii only
+    filters:
+      and:
+        - file.hasTag("dss/case/instruments/iii")
+    order:
+      - file.name
+      - year
+      - person
+      - som_agency
+      - som_mediation
+      - som_object
+      - som_fiction
+      - som_feedback
+    sort:
+      - property: som_fiction
+        direction: DESC
+  - type: cards
+    name: SOM cards
+    order:
+      - file.name
+      - som_agency
+      - som_mediation
+      - som_fiction
+    sort:
+      - property: som_fiction
+        direction: DESC
+    image: note.img
