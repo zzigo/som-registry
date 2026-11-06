@@ -100,6 +100,16 @@ zero / missing → `null` (unscored).
 Unknown keys (`def`, `notes`, `video`, `som_*`, `aat-render-enabled`, …) are
 allowed and kept by the normalizer; they are not public.
 
+## Findings (inline fields)
+
+Interpretive claims that bear on the thesis are not parametric data, so they live in the body, not in the YAML. Write one per line as a Dataview inline field, with optional bracketed fields:
+
+```markdown
+soogfinding:: claim in one or two sentences. [facet:: I] [kind:: counterexample] [bears-on:: A-to-I derivation]
+```
+
+`facet` is one of M, O, A, I, E; `kind` is `counterexample`, `confirmation`, `anomaly` or `question`. Findings are never part of the public payload. The dashboard collects them with `dv.pages('"03-thesis/03-soog/0ins"').file.lists`.
+
 ## Body and languages
 
 The body is free Markdown. When a translation exists, wrap each language in a block:
