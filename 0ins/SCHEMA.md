@@ -105,10 +105,22 @@ allowed and kept by the normalizer; they are not public.
 Interpretive claims that bear on the thesis are not parametric data, so they live in the body, not in the YAML. Write one per line as a Dataview inline field, with optional bracketed fields:
 
 ```markdown
-soogfinding:: claim in one or two sentences. [facet:: I] [kind:: counterexample] [bears-on:: A-to-I derivation]
+soogfinding:: claim in one or two sentences. [facet:: I] [kind:: counterexample] [bears-on:: A-to-I]
 ```
 
-`facet` is one of M, O, A, I, E; `kind` is `counterexample`, `confirmation`, `anomaly` or `question`. Findings are never part of the public payload. The dashboard collects them with `dv.pages('"03-thesis/03-soog/0ins"').file.lists`.
+`facet` is one of M, O, A, I, E; `kind` is `counterexample`, `confirmation`, `anomaly` or `question`; `bears-on` is one thesis id from the controlled list below (the dashboard flags any other value). Findings are never part of the public payload.
+
+Thesis ids (extend deliberately, one line each):
+
+| id | thesis |
+|---|---|
+| `A-to-I` | the interface is derived from the agent |
+| `O-to-I` | the interface is derived from the object |
+| `genotype-threshold` | when a variant becomes a new genotype |
+| `latent-space` | what the MOAIE distance does or fails to capture |
+| `calibration` | what the promotion test or the vector scores get wrong |
+
+The dashboard reads the raw lines of the notes in `0ins` (Dataview does not keep bracketed fields attached to their line), so the format above must stay on one line.
 
 ## Body and languages
 

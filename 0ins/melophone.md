@@ -93,7 +93,7 @@ Free reeds fed by a bellows, as in the accordion and the harmonium, but with the
 
 ## Findings
 
-soogfinding:: Interface (I) is not always derived from the agent (A) or the object (O): the Mélophone imports a sensorimotor scheme from another Hornbostel-Sachs class. Its eight fingering rows in fifths copy the violin and the guitar, so the habit of the body precedes the object and the instrument is a transfer of technique across families. [facet:: I] [kind:: counterexample] [bears-on:: A-to-I derivation]
+soogfinding:: Interface (I) is not always derived from the agent (A) or the object (O): the Mélophone imports a sensorimotor scheme from another Hornbostel-Sachs class. Its eight fingering rows in fifths copy the violin and the guitar, so the habit of the body precedes the object and the instrument is a transfer of technique across families. [facet:: I] [kind:: counterexample] [bears-on:: A-to-I]
 
 ## Open points
 

@@ -324,7 +324,7 @@ root.innerHTML = `
 </style>
 
 <h1>SOOG MOAIE Dashboard</h1>
-<div class="soog-sub">Dynamic registry · reads completed instrument nodes from the case-instruments folder · Speculative Organology</div>
+<div class="soog-sub">Dynamic registry · reads completed instrument nodes from 03-soog/0ins · Speculative Organology</div>
 
 <div class="soog-section">
   <div class="soog-section-label">Knowledge graph stats</div>
@@ -374,7 +374,9 @@ root.innerHTML = `
 const $ = (role) => root.querySelector(`[data-role="${role}"]`);
 
 // ── config ──────────────────────────────────────────────────────────
-const SOURCE = '"03-thesis/cases/case instruments" or "03-thesis/cases/case instruments fictional"';
+// Folder-agnostic: any type: instrument node under 03-thesis is picked up, so moving
+// the registry (e.g. to 03-soog/0ins) no longer breaks the dashboard.
+const SOURCE = '"03-thesis"';
 const PROFILE_KEYS = ["affordance","liveness","playability","learnability","situatedness","mediality","mapping","sensorimotor_scheme","ergonomics","expressivity"];
 const PROFILE_LABELS = ["Affordance","Liveness","Playability","Learnability","Situatedness","Mediality","Mapping","Sensorimotor","Ergonomics","Expressivity"];
 const AXIS = ["M","O","A","I","E"];
@@ -465,7 +467,7 @@ function renderChecks() {
       <span class="soog-check-dot soog-status-${r.status}"></span>
       <span class="soog-check-name">${r.title}</span>
       <span class="soog-check-meta">${r.year}</span>
-    </label>`).join("") : `<div class="soog-error">No completed instrument nodes in the case-instruments folder. Add a node with a 5-value moaie.vector to make it appear here.</div>`;
+    </label>`).join("") : `<div class="soog-error">No completed instrument nodes found under 03-thesis. Add a node with a 5-value moaie.vector to make it appear here.</div>`;
 
   $("inst-checks").querySelectorAll(".soog-check").forEach(el => {
     el.addEventListener("change", () => {
@@ -633,7 +635,7 @@ TABLE
   principle.applies_to AS "Applies to",
   layer AS "Layer",
   status AS "Status"
-FROM "03-thesis/03-soog/0-pri"
+FROM "03-thesis/02-ops/0-pri"
 WHERE type = "principle" OR type = "paradigm"
 SORT category ASC
 ```
@@ -684,7 +686,7 @@ SORT modified ASC
 
 ## Case Instruments in ctx
 
-All case instrument stubs in `01-ctx/cases/`:
+All instrument nodes in `03-soog/0ins/` and `cases/case instruments fictional/`:
 
 ```dataview
 TABLE
@@ -692,7 +694,7 @@ TABLE
   year AS "Year",
   family AS "Family",
   status AS "Status"
-FROM "03-thesis/01-ctx/cases"
+FROM "03-thesis/03-soog/0ins" OR "03-thesis/cases/case instruments fictional"
 WHERE type = "instrument" OR contains(tags, "dss/case/instruments")
 SORT year ASC
 ```
@@ -707,7 +709,7 @@ TABLE
   principle.axes.autonomy AS "Autonomy",
   principle.axes.entanglement AS "Entanglement",
   status AS "Status"
-FROM "03-thesis/03-soog/0-pri/ai"
+FROM "03-thesis/02-ops/0-pri/ai"
 SORT file.name ASC
 ```
 
@@ -735,7 +737,7 @@ GROUP BY cat
 - `3agn/` has generic stubs (humans, mammals, distributed agency) — needs dedicated agent nodes per instrument
 - Instrument family pending full MOAIE treatment: phosphorbone, biogel-feedbacker, aerophone-family
 - Luthemic: registered 2026-05-16 — speculative status; acoustic-feedback-fingerboard node active
-- Interactive registry is now dynamic: it reads every `type: instrument` node with a 5-value `moaie.vector` from `01-ctx/cases/case instruments` and `.../case instruments fictional`. Add a completed node and it appears automatically; tick the boxes to overlay any subset.
+- Interactive registry is now dynamic: it reads every `type: instrument` node with a 5-value `moaie.vector` from anywhere under `03-thesis/` (registry lives in `03-soog/0ins/` since 2026-10-11). Add a completed node and it appears automatically; tick the boxes to overlay any subset.
 
 
 
@@ -1067,4 +1069,48 @@ root.innerHTML += `
 <div class="soog-section-label">Open problems</div>
 ${probHTML}
 </div>`;
+```
+
+```dataviewjs
+// SOOG findings: interpretive claims written as `soogfinding:: ... [facet:: X] [kind:: Y] [bears-on:: Z]`
+// in the body of notes under 03-soog/0ins. Raw lines are parsed because Dataview detaches bracketed
+// fields from their line. Controlled vocabulary lives in 0ins/SCHEMA.md.
+const FOLDER = "03-thesis/03-soog/0ins";
+const FACETS = ["M","O","A","I","E"];
+const KINDS = ["counterexample","confirmation","anomaly","question"];
+const THESES = ["A-to-I","O-to-I","genotype-threshold","latent-space","calibration"];
+
+const out = [];
+for (const page of dv.pages(`"${FOLDER}"`).where(p => p.type === "instrument")) {
+  const text = await dv.io.load(page.file.path);
+  if (!text) continue;
+  for (const m of text.matchAll(/^soogfinding::\s*(.+)$/gm)) {
+    const line = m[1];
+    const fields = {};
+    for (const f of line.matchAll(/\[([\w-]+)::\s*([^\]]*)\]/g)) fields[f[1]] = f[2].trim();
+    const claim = line.replace(/\[[\w-]+::[^\]]*\]/g, "").trim();
+    out.push({ file: page.file, title: page.title ?? page.file.name, claim, ...fields });
+  }
+}
+
+const root = dv.el("div", "", { attr: { class: "soog-findings" } });
+const fSel = ["all", ...FACETS], tSel = ["all", ...THESES];
+let facet = "all", thesis = "all";
+
+function render() {
+  const rows = out.filter(r => (facet === "all" || r.facet === facet) && (thesis === "all" || r["bears-on"] === thesis));
+  const bad = out.filter(r => (r.facet && !FACETS.includes(r.facet)) || (r.kind && !KINDS.includes(r.kind)) || (r["bears-on"] && !THESES.includes(r["bears-on"])));
+  const btn = (arr, cur, key) => arr.map(v => `<button data-${key}="${v}" style="margin:0 4px 4px 0;padding:2px 8px;border-radius:6px;border:1px solid var(--background-modifier-border);background:${v===cur?"var(--background-modifier-hover)":"transparent"};color:var(--text-normal);cursor:pointer;font-size:12px">${v}</button>`).join("");
+  root.innerHTML = `
+    <div style="font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);margin:2rem 0 .5rem">Findings (${rows.length} of ${out.length})</div>
+    <div style="font-size:12px;color:var(--text-muted)">facet</div><div>${btn(fSel, facet, "facet")}</div>
+    <div style="font-size:12px;color:var(--text-muted)">bears on</div><div>${btn(tSel, thesis, "thesis")}</div>
+    ${rows.map(r => `<div style="margin:10px 0;padding:8px 0;border-top:1px solid var(--background-modifier-border)">
+      <div style="font-size:12px;color:var(--text-muted)">${r.facet ?? "—"} · ${r.kind ?? "—"} · ${r["bears-on"] ?? "—"} · <a class="internal-link" data-href="${r.file.path}" href="${r.file.path}">${r.title}</a></div>
+      <div style="font-size:13px;margin-top:2px">${r.claim}</div></div>`).join("") || `<div style="font-size:13px;color:var(--text-muted);margin-top:8px">No findings match.</div>`}
+    ${bad.length ? `<div style="font-size:12px;color:var(--text-error);margin-top:8px">Out of vocabulary: ${bad.map(r => r.title).join(", ")}</div>` : ""}`;
+  root.querySelectorAll("[data-facet]").forEach(b => b.onclick = () => { facet = b.dataset.facet; render(); });
+  root.querySelectorAll("[data-thesis]").forEach(b => b.onclick = () => { thesis = b.dataset.thesis; render(); });
+}
+render();
 ```
